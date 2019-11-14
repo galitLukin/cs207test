@@ -1,7 +1,7 @@
 import pytest
 import sys
 sys.path.append('../')
-from Roots.roots import *
+from Roots import roots
 
 def test_quadroots_result():
     assert roots.quad_roots(1.0, 1.0, -12.0) == ((3+0j), (-4+0j))
@@ -24,3 +24,6 @@ def test_linearroots_types():
 def test_linearroots_zerocoeff():
     with pytest.raises(ValueError):
         roots.linear_roots(a=0.0)
+
+
+test_linearroots_zerocoeff()
