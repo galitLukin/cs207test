@@ -1,7 +1,7 @@
 import pytest
 import sys
 sys.path.append('../')
-from Roots import roots
+from Roots.roots import *
 
 def test_quadroots_result():
     assert roots.quad_roots(1.0, 1.0, -12.0) == ((3+0j), (-4+0j))
