@@ -1,4 +1,6 @@
 import pytest
+import sys
+sys.path.append('../')
 from R import roots
 
 def test_quadroots_result():
